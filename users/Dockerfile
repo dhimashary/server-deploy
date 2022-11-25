@@ -6,8 +6,6 @@ WORKDIR  /var/www/demo-express-docker
 
 COPY package.json package-lock.json* yarn.lock* ./
 
-RUN npm install -g nodemon
-
 # RUN chown -R node:node .
 
 # USER node
