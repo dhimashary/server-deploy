@@ -55,7 +55,7 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers });
 
 startStandaloneServer(server, {
-  listen: { port: process.env.PORT || 5000 },
+  listen: { port: process.env.PORT },
 })
   .then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
