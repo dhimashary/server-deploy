@@ -4,7 +4,7 @@ const axios = require("axios");
 const bookURL = process.env.BOOK_URL;
 const userURL = process.env.USER_URL;
 
-const typeDefs = gql`
+const typeDefs = `#graphql
 	# Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 	# This "Book" type defines the queryable fields for every book in our data source.
 	type Book {
