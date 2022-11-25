@@ -30,7 +30,7 @@ const resolvers = {
 		books: async (_) => {
 			try {
 				const { data: books } = await axios.get(
-					bookURL
+					bookURL + '/books'
 				);
 				return books;
 			} catch (error) {
@@ -41,7 +41,7 @@ const resolvers = {
 		users: async (_) => {
 			try {
 				const { data: users } = await axios.get(
-					userURL
+					userURL + '/users'
 				);
 				return users;
 			} catch (error) {
