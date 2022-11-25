@@ -52,7 +52,7 @@ const resolvers = {
 	}
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({ typeDefs, resolvers, instrospection: true });
 
 startStandaloneServer(server, {
   listen: { port: process.env.PORT },
